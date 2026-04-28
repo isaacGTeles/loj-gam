@@ -1,0 +1,40 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "The Legend of Zelda: Tears of the Kingdom",
+      "categoria": "Aventura",
+      "preco": 299.9,
+      "imagem": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/v1/ncom/software/switch/70010000063714/desc/6"
+    },
+    {
+      "id": "2",
+      "titulo": "Elden Ring",
+      "categoria": "RPG",
+      "preco": 249,
+      "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aaj7vNr7od92Vol6499pS99F.png"
+    },
+    {
+      "id": "3",
+      "titulo": "Spider-Man 2",
+      "categoria": "Ação",
+      "preco": 349.9,
+      "imagem": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0819/1ec7076a084090b8f9e612f0043831b3e70d4f26b5e5239a.png"
+    },
+    {
+      "titulo": "senai",
+      "categoria": "ensino",
+      "preco": 800,
+      "imagem": "data:image/png;base64,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",
+      "id": "lFbDnzNBRfA"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "email": "admin@teste.com",
+      "senha": "123"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
