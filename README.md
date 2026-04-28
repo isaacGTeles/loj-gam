@@ -1,59 +1,69 @@
-# LojaGamess
+# 🎮 Loja de Games - Gerenciador de Catálogo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Projeto desenvolvido para a unidade curricular de **Frameworks e Consumo de APIs**. A aplicação consiste em um sistema de gerenciamento de jogos, permitindo o controle completo de um catálogo (CRUD) integrando um frontend moderno em **Angular** com um backend simulado em **Node.js**.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Como Executar o Projeto
 
+Siga os passos abaixo para rodar a aplicação em sua máquina local:
+
+### 1. Requisitos Próximos
+* **Node.js 24** ou superior
+* **Angular CLI** instalado (`npm install -g @angular/cli`)
+
+### 2. Iniciar o Backend (API Simulada)
+Na raiz do projeto, execute o comando para subir o servidor de dados:
 ```bash
+npx json-server --watch db.json
+```
+O servidor rodará em: http://localhost:3000
+
+### 3. Iniciar o Frontend (Angular)
+Em um novo terminal, instale as dependências e inicie a aplicação:
+
+```Bash
+npm install
 ng serve
 ```
+Acesse no navegador: http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🔐 Acesso ao Sistema (Login)
+Para navegar nas áreas restritas da aplicação, utilize as credenciais abaixo:
 
-## Code scaffolding
+```
+E-mail: admin@teste.com
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+Senha: 123
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🛠️ Tecnologias Utilizadas
+Angular 21: Framework principal utilizando Componentes Standalone.
 
-```bash
-ng generate --help
-```
+Signals: Gerenciamento de estado reativo para alta performance.
 
-## Building
+Angular Material: Biblioteca de componentes de UI (Cards, Forms, Buttons).
 
-To build the project run:
+JSON-Server: Simulação de API RESTful para persistência de dados.
 
-```bash
-ng build
-```
+TypeScript: Tipagem forte para maior segurança no desenvolvimento.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 📂 Funcionalidades (CRUD)
+[x] Autenticação: Validação de credenciais e proteção de rotas.
 
-## Running unit tests
+[x] Listagem (Read): Exibição dinâmica de jogos via API através de Signals.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+[x] Cadastro (Create): Inclusão de novos títulos com envio de payload JSON via POST.
 
-```bash
-ng test
-```
+[x] Exclusão (Delete): Remoção de itens com atualização automática da interface (sem refresh).
 
-## Running end-to-end tests
+### 📁 Estrutura do Projeto
+src/app/components: Componentes de interface (Login, Home, Cadastro).
 
-For end-to-end (e2e) testing, run:
+src/app/services: Lógica de consumo de API (HttpClient).
 
-```bash
-ng e2e
-```
+src/app/models: Interfaces de dados (Tipagem do Jogo).
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+src/app/app.routes.ts: Definição de rotas e navegação.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+db.json: Base de dados local.
